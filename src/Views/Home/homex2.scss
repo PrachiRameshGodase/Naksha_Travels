@@ -1,0 +1,239 @@
+@use '../../scss/' as *;
+
+
+$colors: (
+	//   main: #f857a6,
+	//   second: #ff5858
+	//   main: $white,
+	//   second: $white
+	  main: #D7DDE8,
+	  second: #757F9A
+);
+
+
+
+.x4se55423sdfd5x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 100%;
+    // min-height: 100vh;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	border-radius: 50px;
+  background: linear-gradient(to right, map-get($colors, main), map-get($colors, second));
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+
+  &.is-play {
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; // Adjusted for SCSS as there is no direct variable reuse like Stylus
+
+    .button-outer-circle {
+      background: rgba(#fff, .2);
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .button-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px; // Adjusted for SCSS
+      transform: translate(-50%, -50%);
+
+      .triangle {
+        animation: fadeIn 7s ease;
+      }
+
+      .path {
+        stroke-dasharray: 90;
+        stroke-dashoffset: 0;
+        animation: triangleStroke 3s;
+        animation-timing-function: ease;
+      }
+    }
+  }
+}
+
+.has-scale-animation {
+  animation: smallScale 3s infinite;
+}
+
+.has-delay-short {
+  animation-delay: .5s;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.allproductsofdetsclkx2 {
+  background: $primary09;
+  min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container.grid, .container.columns {
+  align-content: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.letter {
+  text-align: center;
+  color: black;
+  font-size: 10vmax;
+  // font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+}
+.container.grid .letter {
+  flex-basis: 50%;
+}
+.container.columns .letter {
+  flex-basis: 25%;
+}
+.for, .gsap {
+  font-size: 10vmax;
+  color: var(--color-surface-white);
+}
+.for {
+  padding: 2px 1.6vmax;
+  font-weight: 300;
+  display: none;
+}
+.gsap {
+  padding: 2px 0;
+  // font-weight: 600;
+  display: none;
+}
+.container.final .for, .container.final .gsap {
+  display: block;
+}
+.F {
+  background: var(--color-shockingly-green);
+}
+.l {
+  background: var(--color-lt-green);
+}
+.i {
+   background: var(--color-blue);
+}
+.p {
+  background: var(--color-lilac);
+}
+.container.plain .letter {
+  background: transparent;
+  color: var(--color-surface-white);
+  padding: 0;
+}
+
+}
+
+
+.logouticonsfoernsklc {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  .sxcs5dfs85df45 {
+    background: $primary06;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 10px;
+    &:hover {
+      background: $primary10;
+    }
+    img {
+      height: 15px;
+      width: fit-content;
+
+    }
+    a {
+      
+    // color: $white !important;
+    }
+  }
+
+}

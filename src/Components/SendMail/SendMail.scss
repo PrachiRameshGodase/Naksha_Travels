@@ -1,0 +1,113 @@
+#EmailHeading {
+
+    padding-left: 25px;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+
+#formofcreateitems2 {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* Enable vertical scrolling if content overflows */
+
+    // Main content container
+    #Main-Content {
+        margin-top: 20px;
+    }
+
+    #EmailHeading {
+        padding: 10px;
+        font-weight: 300;
+        font-size: 25px;
+        margin-bottom: 20px;
+        width: 100%;
+
+    }
+
+    // Section styling
+    .section {
+        margin-bottom: 20px;
+        flex-shrink: 0;
+        /* Prevent sections from shrinking */
+        border-radius: 8px;
+
+        .pdf-download {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+
+
+
+            label {
+                max-width: 20%;
+            }
+
+            input {
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 54%;
+            }
+        }
+    }
+
+    #FaFilePDF {
+        cursor: pointer;
+        margin-left: 8px;
+        height: 40px;
+        width: 40px;
+        font-size: 24px;
+        color: red;
+        border: 1px solid #d3d3d3;
+        padding: 5px
+    }
+
+    // Button container styling
+    .buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: auto;
+        /* Push buttons to the bottom of the container */
+        // margin-left: 20px;
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:first-of-type {
+                background-color: rgb(109, 74, 168);
+                color: #fff;
+            }
+
+            &:last-of-type {
+                background-color: white;
+                color: black;
+                border: 1px solid #d3d3d3;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.formectionx2send {
+    position: fixed !important;
+    width: 100%;
+    background: white;
+}
